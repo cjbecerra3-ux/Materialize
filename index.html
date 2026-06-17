@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PowerFit Gym — Tu mejor versión empieza aquí</title>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!-- CSS personalizado (SIEMPRE después de Materialize) -->
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════
+     PARTE 1 — navbar.html | Navbar + Hero + Footer
+══════════════════════════════════════════════════════ -->
+
+<!-- NAVBAR -->
+<nav class="deep-purple darken-2 z-depth-3" style="position:fixed;top:0;width:100%;z-index:1000;">
+  <div class="nav-wrapper container">
+    <a href="#inicio" class="brand-logo white-text" style="display:flex;align-items:center;gap:6px;font-size:1.5rem;font-weight:700;">
+      <i class="material-icons">fitness_center</i>PowerFit
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#inicio"    class="white-text waves-effect waves-light" style="font-weight:500;">Inicio</a></li>
+      <li><a href="#servicios" class="white-text waves-effect waves-light" style="font-weight:500;">Servicios</a></li>
+      <li><a href="#equipo"    class="white-text waves-effect waves-light" style="font-weight:500;">Equipo</a></li>
+      <li><a href="#contacto"  class="white-text waves-effect waves-light" style="font-weight:500;">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div id="inicio" class="hero-section valign-wrapper" style="min-height:90vh;">
+  <div class="container center-align">
+    <h1 class="white-text hero-title">
+      Tu mejor versión<br>empieza aquí
+    </h1>
+    <p class="white-text hero-sub" style="max-width:520px;margin:16px auto 40px;">
+      Más de 10 años transformando vidas. Equipo de élite, instalaciones de primer nivel y la comunidad más motivada de la ciudad.
+    </p>
+    <a href="#servicios" class="btn btn-large waves-effect waves-light purple lighten-1 pulse" style="margin-right:12px;border-radius:3px;font-weight:700;letter-spacing:1px;">
+      <i class="material-icons left">arrow_forward</i>Únete ahora
+    </a>
+    <a href="#equipo" class="btn btn-large waves-effect white deep-purple-text" style="border-radius:3px;font-weight:700;letter-spacing:1px;">
+      Nuestro equipo
+    </a>
+    <div style="margin-top:50px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <div class="chip white deep-purple-text z-depth-2" style="font-weight:700;font-size:.92rem;height:36px;line-height:36px;padding:0 16px;">
+        <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">people</i>2 500+ Miembros
+      </div>
+      <div class="chip white deep-purple-text z-depth-2" style="font-weight:700;font-size:.92rem;height:36px;line-height:36px;padding:0 16px;">
+        <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">fitness_center</i>45+ Clases
+      </div>
+      <div class="chip white deep-purple-text z-depth-2" style="font-weight:700;font-size:.92rem;height:36px;line-height:36px;padding:0 16px;">
+        <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">star</i>10 Años
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PARTE 2 — servicios.html | Cards de Servicios + Tabla
+══════════════════════════════════════════════════════ -->
+
+<!-- SECCIÓN SERVICIOS -->
+<section id="servicios" class="container section">
+  <div class="center-align">
+    <h4 class="white-text section-title">Nuestros Servicios</h4>
+    <div class="title-underline deep-purple lighten-1"></div>
+    <p class="grey-text text-lighten-1" style="max-width:560px;margin:0 auto 40px;font-size:1.05rem;">
+      Todo lo que necesitas para alcanzar tus metas en un solo lugar
+    </p>
+  </div>
+
+  <div class="row">
+
+    <!-- Cardio -->
+    <div class="col s12 m6 l3">
+      <div class="card hoverable z-depth-2">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=600&q=80" class="srv-img" alt="Cardio" />
+          <span class="card-title">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">directions_run</i>Cardio
+          </span>
+        </div>
+        <div class="card-content">
+          <p>Mejora tu resistencia cardiovascular con equipos de última generación y rutinas progresivas.</p>
+          <span class="chip purple lighten-2 white-text" style="font-size:.75rem;">Principiante</span>
+          <span class="chip grey darken-3 white-text" style="font-size:.75rem;">Grupal</span>
+        </div>
+        <div class="card-action">
+          <a href="#contacto" class="waves-effect waves-light">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pesas -->
+    <div class="col s12 m6 l3">
+      <div class="card hoverable z-depth-2">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?w=600&q=80" class="srv-img" alt="Pesas" />
+          <span class="card-title">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">fitness_center</i>Pesas
+          </span>
+        </div>
+        <div class="card-content">
+          <p>Sala de pesas libre con más de 300 equipos. Aumenta tu fuerza y define tu musculatura.</p>
+          <span class="chip purple darken-2 white-text" style="font-size:.75rem;">Avanzado</span>
+          <span class="chip grey darken-3 white-text" style="font-size:.75rem;">Individual</span>
+        </div>
+        <div class="card-action">
+          <a href="#contacto" class="waves-effect waves-light">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Yoga -->
+    <div class="col s12 m6 l3">
+      <div class="card hoverable z-depth-2">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80" class="srv-img" alt="Yoga" />
+          <span class="card-title">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">self_improvement</i>Yoga
+          </span>
+        </div>
+        <div class="card-content">
+          <p>Mejora tu flexibilidad, equilibrio mental y bienestar. Clases para todos los niveles.</p>
+          <span class="chip teal lighten-1 white-text" style="font-size:.75rem;">Principiante</span>
+          <span class="chip grey darken-3 white-text" style="font-size:.75rem;">Grupal</span>
+        </div>
+        <div class="card-action">
+          <a href="#contacto" class="waves-effect waves-light">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Funcional -->
+    <div class="col s12 m6 l3">
+      <div class="card hoverable z-depth-2">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=600&q=80" class="srv-img" alt="Funcional" />
+          <span class="card-title">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">sports_mma</i>Funcional
+          </span>
+        </div>
+        <div class="card-content">
+          <p>CrossFit y entrenamiento funcional de alta intensidad. Quema calorías y gana fuerza.</p>
+          <span class="chip orange darken-2 white-text" style="font-size:.75rem;">Avanzado</span>
+          <span class="chip grey darken-3 white-text" style="font-size:.75rem;">Grupal</span>
+        </div>
+        <div class="card-action">
+          <a href="#contacto" class="waves-effect waves-light">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TABLA DE PLANES -->
+<div class="bg-dark-2" style="padding:60px 0;">
+  <div class="container">
+    <div class="center-align" style="margin-bottom:40px;">
+      <h4 class="white-text section-title">Planes y Precios</h4>
+      <div class="title-underline deep-purple lighten-1"></div>
+      <p class="grey-text text-lighten-1" style="font-size:1.05rem;">Elige el plan que mejor se adapte a tus metas</p>
+    </div>
+    <table class="striped highlight responsive-table z-depth-2">
+      <thead>
+        <tr>
+          <th>Característica</th>
+          <th><i class="material-icons tiny" style="vertical-align:middle;">star_border</i> Básico — $20/mes</th>
+          <th><i class="material-icons tiny" style="vertical-align:middle;">star_half</i> Pro — $35/mes</th>
+          <th><i class="material-icons tiny" style="vertical-align:middle;">star</i> Premium — $55/mes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong class="white-text">Acceso sala</strong></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Clases grupales</strong></td>
+          <td>2 / semana</td><td>5 / semana</td><td>Ilimitado</td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Entrenador personal</strong></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td>1 / mes</td><td>4 / mes</td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Piscina &amp; Spa</strong></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Plan nutricional</strong></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Acceso 24/7</strong></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="center-align" style="margin-top:32px;">
+      <a href="#contacto" class="btn btn-large waves-effect waves-light deep-purple" style="border-radius:3px;font-weight:700;letter-spacing:1px;">
+        <i class="material-icons left">card_membership</i>Consultar membresía
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PARTE 3 — equipo.html | Perfiles + Horario
+══════════════════════════════════════════════════════ -->
+
+<!-- SECCIÓN EQUIPO — Perfiles detallados -->
+<section id="equipo" class="section bg-dark-1">
+  <div class="container">
+    <div class="center-align">
+      <h4 class="white-text section-title">Nuestro Equipo</h4>
+      <div class="title-underline deep-purple lighten-1"></div>
+      <p class="grey-text text-lighten-1" style="max-width:560px;margin:0 auto 40px;font-size:1.05rem;">
+        Conoce a los profesionales que guiarán tu transformación
+      </p>
+    </div>
+
+    <div class="row">
+
+      <!-- ── Perfil 1: Carlos Mendoza ── -->
+
+      <div class="col s12 m6">
+        <div class="card hoverable z-depth-3" style="border-top:3px solid #7b1fa2;">
+          <!-- Foto -->
+          <div style="position:relative;">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700&q=80" class="trainer-img" alt="Carlos Mendoza" />
+            <div class="trainer-overlay">
+              <h5 class="white-text" style="margin:0;font-weight:700;">Carlos Mendoza</h5>
+              <p class="purple-text text-lighten-3" style="margin:2px 0;font-size:.9rem;">
+                <i class="material-icons tiny" style="vertical-align:middle;">sports</i> Fuerza &amp; Acondicionamiento
+              </p>
+            </div>
+          </div>
+          <!-- Stats rápidas -->
+          <div class="card-content" style="padding:16px;">
+            <div class="row" style="margin-bottom:0;border-bottom:1px solid #2a2a2a;padding-bottom:12px;">
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons purple-text text-lighten-2">cake</i>
+                <p class="val">32</p><p class="lbl">Edad</p>
+              </div>
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons purple-text text-lighten-2">person</i>
+                <p class="val">Masc.</p><p class="lbl">Género</p>
+              </div>
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons purple-text text-lighten-2">emoji_events</i>
+                <p class="val">8 años</p><p class="lbl">Exp.</p>
+              </div>
+              <div class="col s3 info-stat">
+                <i class="material-icons purple-text text-lighten-2">fitness_center</i>
+                <p class="val">Fuerza</p><p class="lbl">Área</p>
+              </div>
+            </div>
+
+            <!-- A qué se dedica -->
+            <p class="purple-text text-lighten-2" style="font-weight:700;margin:14px 0 4px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">work</i>¿A QUÉ SE DEDICA?
+            </p>
+            <p style="font-size:.9rem;line-height:1.7;margin-bottom:12px;">
+              Especialista en CrossFit, entrenamiento de fuerza y acondicionamiento funcional. Diseña programas de pérdida de peso y ganancia muscular adaptados a cada persona.
+            </p>
+
+            <!-- Habilidades -->
+            <p class="purple-text text-lighten-2" style="font-weight:700;margin-bottom:8px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">bar_chart</i>HABILIDADES
+            </p>
+            <div class="skill-lbl"><span class="grey-text">CrossFit</span><span class="purple-text text-lighten-2">95%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:8px;border-radius:2px;"><div class="determinate deep-purple lighten-1" style="width:95%;"></div></div>
+            <div class="skill-lbl"><span class="grey-text">Fuerza</span><span class="purple-text text-lighten-2">90%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:8px;border-radius:2px;"><div class="determinate deep-purple lighten-1" style="width:90%;"></div></div>
+            <div class="skill-lbl"><span class="grey-text">Nutrición</span><span class="purple-text text-lighten-2">75%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:12px;border-radius:2px;"><div class="determinate deep-purple lighten-1" style="width:75%;"></div></div>
+
+            <!-- Certificaciones -->
+            <p class="purple-text text-lighten-2" style="font-weight:700;margin-bottom:8px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">verified</i>CERTIFICACIONES
+            </p>
+            <span class="chip deep-purple lighten-1 white-text" style="font-size:.72rem;">CrossFit L2</span>
+            <span class="chip grey darken-3 white-text" style="font-size:.72rem;">NSCA-CPT</span>
+            <span class="chip grey darken-3 white-text" style="font-size:.72rem;">Nutrición Deportiva</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Perfil 2: Ana Torres ── -->
+      <div class="col s12 m6">
+        <div class="card hoverable z-depth-3" style="border-top:3px solid #00897b;">
+          <div style="position:relative;">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=700&q=80" class="trainer-img" alt="Ana Torres" />
+            <div class="trainer-overlay">
+              <h5 class="white-text" style="margin:0;font-weight:700;">Ana Torres</h5>
+              <p class="teal-text text-lighten-3" style="margin:2px 0;font-size:.9rem;">
+                <i class="material-icons tiny" style="vertical-align:middle;">self_improvement</i> Yoga &amp; Pilates
+              </p>
+            </div>
+          </div>
+          <div class="card-content" style="padding:16px;">
+            <div class="row" style="margin-bottom:0;border-bottom:1px solid #2a2a2a;padding-bottom:12px;">
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons teal-text text-lighten-1">cake</i>
+                <p class="val">28</p><p class="lbl">Edad</p>
+              </div>
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons teal-text text-lighten-1">person</i>
+                <p class="val">Fem.</p><p class="lbl">Género</p>
+              </div>
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons teal-text text-lighten-1">emoji_events</i>
+                <p class="val">6 años</p><p class="lbl">Exp.</p>
+              </div>
+              <div class="col s3 info-stat">
+                <i class="material-icons teal-text text-lighten-1">self_improvement</i>
+                <p class="val">Yoga</p><p class="lbl">Área</p>
+              </div>
+            </div>
+            <p class="teal-text text-lighten-1" style="font-weight:700;margin:14px 0 4px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">work</i>¿A QUÉ SE DEDICA?
+            </p>
+            <p style="font-size:.9rem;line-height:1.7;margin-bottom:12px;">
+              Instructora de Yoga y Pilates certificada internacionalmente. Especializada en manejo del estrés, flexibilidad avanzada y bienestar integral mente-cuerpo.
+            </p>
+            <p class="teal-text text-lighten-1" style="font-weight:700;margin-bottom:8px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">bar_chart</i>HABILIDADES
+            </p>
+            <div class="skill-lbl"><span class="grey-text">Yoga</span><span class="teal-text text-lighten-1">97%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:8px;border-radius:2px;"><div class="determinate teal" style="width:97%;"></div></div>
+            <div class="skill-lbl"><span class="grey-text">Pilates</span><span class="teal-text text-lighten-1">88%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:8px;border-radius:2px;"><div class="determinate teal" style="width:88%;"></div></div>
+            <div class="skill-lbl"><span class="grey-text">Meditación</span><span class="teal-text text-lighten-1">92%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:12px;border-radius:2px;"><div class="determinate teal" style="width:92%;"></div></div>
+            <p class="teal-text text-lighten-1" style="font-weight:700;margin-bottom:8px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">verified</i>CERTIFICACIONES
+            </p>
+            <span class="chip teal white-text" style="font-size:.72rem;">Yoga Alliance RYT-200</span>
+            <span class="chip grey darken-3 white-text" style="font-size:.72rem;">Pilates STOTT</span>
+            <span class="chip grey darken-3 white-text" style="font-size:.72rem;">Mindfulness</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- fin fila 1 -->
+    <div class="row">
+
+      <!-- ── Perfil 3: Marcos Vega ── -->
+      <div class="col s12 m6">
+        <div class="card hoverable z-depth-3" style="border-top:3px solid #e65100;">
+          <div style="position:relative;">
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=700&q=80" class="trainer-img" alt="Marcos Vega" />
+            <div class="trainer-overlay">
+              <h5 class="white-text" style="margin:0;font-weight:700;">Marcos Vega</h5>
+              <p class="orange-text text-lighten-3" style="margin:2px 0;font-size:.9rem;">
+                <i class="material-icons tiny" style="vertical-align:middle;">sports_mma</i> Boxeo &amp; Artes Marciales
+              </p>
+            </div>
+          </div>
+          <div class="card-content" style="padding:16px;">
+            <div class="row" style="margin-bottom:0;border-bottom:1px solid #2a2a2a;padding-bottom:12px;">
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons orange-text text-darken-1">cake</i>
+                <p class="val">38</p><p class="lbl">Edad</p>
+              </div>
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons orange-text text-darken-1">person</i>
+                <p class="val">Masc.</p><p class="lbl">Género</p>
+              </div>
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons orange-text text-darken-1">emoji_events</i>
+                <p class="val">12 años</p><p class="lbl">Exp.</p>
+              </div>
+              <div class="col s3 info-stat">
+                <i class="material-icons orange-text text-darken-1">sports_mma</i>
+                <p class="val">Boxeo</p><p class="lbl">Área</p>
+              </div>
+            </div>
+            <p class="orange-text text-darken-1" style="font-weight:700;margin:14px 0 4px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">work</i>¿A QUÉ SE DEDICA?
+            </p>
+            <p style="font-size:.9rem;line-height:1.7;margin-bottom:12px;">
+              Exboxeador profesional categoría AMB. Instructor de Boxeo, MMA y Muay Thai. Enseña técnica, defensa personal y acondicionamiento físico mediante las artes marciales.
+            </p>
+            <p class="orange-text text-darken-1" style="font-weight:700;margin-bottom:8px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">bar_chart</i>HABILIDADES
+            </p>
+            <div class="skill-lbl"><span class="grey-text">Boxeo</span><span class="orange-text text-darken-1">99%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:8px;border-radius:2px;"><div class="determinate orange darken-2" style="width:99%;"></div></div>
+            <div class="skill-lbl"><span class="grey-text">MMA</span><span class="orange-text text-darken-1">85%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:8px;border-radius:2px;"><div class="determinate orange darken-2" style="width:85%;"></div></div>
+            <div class="skill-lbl"><span class="grey-text">Defensa Personal</span><span class="orange-text text-darken-1">90%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:12px;border-radius:2px;"><div class="determinate orange darken-2" style="width:90%;"></div></div>
+            <p class="orange-text text-darken-1" style="font-weight:700;margin-bottom:8px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">verified</i>CERTIFICACIONES
+            </p>
+            <span class="chip orange darken-2 white-text" style="font-size:.72rem;">Boxeo Pro AMB</span>
+            <span class="chip grey darken-3 white-text" style="font-size:.72rem;">MMA Instructor</span>
+            <span class="chip grey darken-3 white-text" style="font-size:.72rem;">Muay Thai B2</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Perfil 4: Laura Paredes ── -->
+      <div class="col s12 m6">
+        <div class="card hoverable z-depth-3" style="border-top:3px solid #ad1457;">
+          <div style="position:relative;">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=700&q=80" class="trainer-img" alt="Laura Paredes" />
+            <div class="trainer-overlay">
+              <h5 class="white-text" style="margin:0;font-weight:700;">Laura Paredes</h5>
+              <p class="pink-text text-lighten-3" style="margin:2px 0;font-size:.9rem;">
+                <i class="material-icons tiny" style="vertical-align:middle;">restaurant</i> Nutrición &amp; Zumba
+              </p>
+            </div>
+          </div>
+          <div class="card-content" style="padding:16px;">
+            <div class="row" style="margin-bottom:0;border-bottom:1px solid #2a2a2a;padding-bottom:12px;">
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons pink-text text-lighten-1">cake</i>
+                <p class="val">30</p><p class="lbl">Edad</p>
+              </div>
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons pink-text text-lighten-1">person</i>
+                <p class="val">Fem.</p><p class="lbl">Género</p>
+              </div>
+              <div class="col s3 info-stat" style="border-right:1px solid #2a2a2a;">
+                <i class="material-icons pink-text text-lighten-1">emoji_events</i>
+                <p class="val">5 años</p><p class="lbl">Exp.</p>
+              </div>
+              <div class="col s3 info-stat">
+                <i class="material-icons pink-text text-lighten-1">restaurant</i>
+                <p class="val">Nutrición</p><p class="lbl">Área</p>
+              </div>
+            </div>
+            <p class="pink-text text-lighten-1" style="font-weight:700;margin:14px 0 4px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">work</i>¿A QUÉ SE DEDICA?
+            </p>
+            <p style="font-size:.9rem;line-height:1.7;margin-bottom:12px;">
+              Nutrióloga certificada especializada en nutrición deportiva y pérdida de peso saludable. También instructora de Zumba, combinando bienestar físico con el poder de la danza.
+            </p>
+            <p class="pink-text text-lighten-1" style="font-weight:700;margin-bottom:8px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">bar_chart</i>HABILIDADES
+            </p>
+            <div class="skill-lbl"><span class="grey-text">Nutrición Deportiva</span><span class="pink-text text-lighten-1">96%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:8px;border-radius:2px;"><div class="determinate pink lighten-1" style="width:96%;"></div></div>
+            <div class="skill-lbl"><span class="grey-text">Zumba</span><span class="pink-text text-lighten-1">92%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:8px;border-radius:2px;"><div class="determinate pink lighten-1" style="width:92%;"></div></div>
+            <div class="skill-lbl"><span class="grey-text">Planes de dieta</span><span class="pink-text text-lighten-1">88%</span></div>
+            <div class="progress grey darken-3" style="margin-bottom:12px;border-radius:2px;"><div class="determinate pink lighten-1" style="width:88%;"></div></div>
+            <p class="pink-text text-lighten-1" style="font-weight:700;margin-bottom:8px;font-size:.9rem;">
+              <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">verified</i>CERTIFICACIONES
+            </p>
+            <span class="chip pink lighten-2 white-text" style="font-size:.72rem;">Nutrióloga Certificada</span>
+            <span class="chip grey darken-3 white-text" style="font-size:.72rem;">Zumba B1</span>
+            <span class="chip grey darken-3 white-text" style="font-size:.72rem;">Dietética Clínica</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- fin fila 2 -->
+  </div>
+</section>
+
+<!-- HORARIO SEMANAL — Flip cards CSS -->
+<div class="bg-dark-2" style="padding:60px 0;">
+  <div class="container">
+    <div class="center-align" style="margin-bottom:36px;">
+      <h5 class="white-text section-title">Horario Semanal</h5>
+      <div class="title-underline deep-purple lighten-1"></div>
+      <p class="grey-text text-lighten-1" style="font-size:1rem;">
+        <i class="material-icons tiny" style="vertical-align:middle;">touch_app</i>
+        Pasa el cursor sobre cada día para ver la actividad
+      </p>
+    </div>
+
+    <div class="row">
+
+      <!-- LUNES -->
+      <div class="col s6 m3 l2">
+        <div class="day-card">
+          <div class="day-card-inner">
+            <div class="day-front deep-purple darken-2 z-depth-2">
+              <p class="day-abbr white-text">LUN</p>
+              <p class="day-emoji">🏃</p>
+              <p class="day-name white-text">LUNES</p>
+            </div>
+            <div class="day-back deep-purple lighten-1 z-depth-3">
+              <i class="material-icons white-text" style="font-size:1.6rem;margin-bottom:4px;">directions_run</i>
+              <p class="day-back-title">Cardio Intensivo</p>
+              <p class="day-back-time">07:00 AM</p>
+              <p class="day-back-inst">Carlos Mendoza</p>
+              <span class="chip white deep-purple-text day-back-level" style="height:22px;line-height:22px;font-size:.65rem;padding:0 8px;">Alta intensidad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MARTES -->
+      <div class="col s6 m3 l2">
+        <div class="day-card">
+          <div class="day-card-inner">
+            <div class="day-front teal darken-1 z-depth-2">
+              <p class="day-abbr white-text">MAR</p>
+              <p class="day-emoji">🧘</p>
+              <p class="day-name white-text">MARTES</p>
+            </div>
+            <div class="day-back teal lighten-1 z-depth-3">
+              <i class="material-icons white-text" style="font-size:1.6rem;margin-bottom:4px;">self_improvement</i>
+              <p class="day-back-title">Yoga Matutino</p>
+              <p class="day-back-time">08:00 AM</p>
+              <p class="day-back-inst">Ana Torres</p>
+              <span class="chip white teal-text day-back-level" style="height:22px;line-height:22px;font-size:.65rem;padding:0 8px;">Baja intensidad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MIÉRCOLES -->
+      <div class="col s6 m3 l2">
+        <div class="day-card">
+          <div class="day-card-inner">
+            <div class="day-front deep-purple z-depth-2">
+              <p class="day-abbr white-text">MIÉ</p>
+              <p class="day-emoji">💪</p>
+              <p class="day-name white-text">MIÉRCOLES</p>
+            </div>
+            <div class="day-back purple lighten-1 z-depth-3">
+              <i class="material-icons white-text" style="font-size:1.6rem;margin-bottom:4px;">fitness_center</i>
+              <p class="day-back-title">CrossFit</p>
+              <p class="day-back-time">06:00 PM</p>
+              <p class="day-back-inst">Carlos Mendoza</p>
+              <span class="chip white purple-text day-back-level" style="height:22px;line-height:22px;font-size:.65rem;padding:0 8px;">Alta intensidad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JUEVES -->
+      <div class="col s6 m3 l2">
+        <div class="day-card">
+          <div class="day-card-inner">
+            <div class="day-front orange darken-3 z-depth-2">
+              <p class="day-abbr white-text">JUE</p>
+              <p class="day-emoji">🥊</p>
+              <p class="day-name white-text">JUEVES</p>
+            </div>
+            <div class="day-back orange darken-1 z-depth-3">
+              <i class="material-icons white-text" style="font-size:1.6rem;margin-bottom:4px;">sports_mma</i>
+              <p class="day-back-title">Boxeo</p>
+              <p class="day-back-time">07:00 PM</p>
+              <p class="day-back-inst">Marcos Vega</p>
+              <span class="chip white orange-text day-back-level" style="height:22px;line-height:22px;font-size:.65rem;padding:0 8px;">Media intensidad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIERNES -->
+      <div class="col s6 m3 l2">
+        <div class="day-card">
+          <div class="day-card-inner">
+            <div class="day-front pink darken-2 z-depth-2">
+              <p class="day-abbr white-text">VIE</p>
+              <p class="day-emoji">💃</p>
+              <p class="day-name white-text">VIERNES</p>
+            </div>
+            <div class="day-back pink lighten-1 z-depth-3">
+              <i class="material-icons white-text" style="font-size:1.6rem;margin-bottom:4px;">music_note</i>
+              <p class="day-back-title">Zumba</p>
+              <p class="day-back-time">05:00 PM</p>
+              <p class="day-back-inst">Laura Paredes</p>
+              <span class="chip white pink-text day-back-level" style="height:22px;line-height:22px;font-size:.65rem;padding:0 8px;">Divertido</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SÁBADO -->
+      <div class="col s6 m3 l2">
+        <div class="day-card">
+          <div class="day-card-inner">
+            <div class="day-front purple darken-3 z-depth-2">
+              <p class="day-abbr white-text">SÁB</p>
+              <p class="day-emoji">🤸</p>
+              <p class="day-name white-text">SÁBADO</p>
+            </div>
+            <div class="day-back purple z-depth-3">
+              <i class="material-icons white-text" style="font-size:1.6rem;margin-bottom:4px;">sports_gymnastics</i>
+              <p class="day-back-title">Pilates</p>
+              <p class="day-back-time">09:00 AM</p>
+              <p class="day-back-inst">Ana Torres</p>
+              <span class="chip white purple-text day-back-level" style="height:22px;line-height:22px;font-size:.65rem;padding:0 8px;">Media intensidad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOMINGO -->
+      <div class="col s6 m3 l2">
+        <div class="day-card">
+          <div class="day-card-inner">
+            <div class="day-front grey darken-3 z-depth-2">
+              <p class="day-abbr white-text">DOM</p>
+              <p class="day-emoji">⚡</p>
+              <p class="day-name white-text">DOMINGO</p>
+            </div>
+            <div class="day-back grey darken-1 z-depth-3">
+              <i class="material-icons white-text" style="font-size:1.6rem;margin-bottom:4px;">bolt</i>
+              <p class="day-back-title">Funcional Grupal</p>
+              <p class="day-back-time">10:00 AM</p>
+              <p class="day-back-inst">Carlos Mendoza</p>
+              <span class="chip white grey-text text-darken-3 day-back-level" style="height:22px;line-height:22px;font-size:.65rem;padding:0 8px;">Alta intensidad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row horario -->
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PARTE 4 — contacto.html | Galería + Formulario
+══════════════════════════════════════════════════════ -->
+
+<!-- GALERÍA -->
+<section class="section bg-dark-1">
+  <div class="container">
+    <div class="center-align">
+      <h4 class="white-text section-title">Nuestras Instalaciones</h4>
+      <div class="title-underline deep-purple lighten-1"></div>
+      <p class="grey-text text-lighten-1" style="font-size:1.05rem;margin-bottom:40px;">Instalaciones de primera clase diseñadas para tu éxito</p>
+    </div>
+    <div class="row">
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80" alt="Sala principal" />
+      </div>
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2" src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80" alt="Área cardio" />
+      </div>
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2" src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80" alt="Pesas libres" />
+      </div>
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2" src="https://images.unsplash.com/photo-1549476464-37392f717541?w=600&q=80" alt="Sala yoga" />
+      </div>
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Zona funcional" />
+      </div>
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2" src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=600&q=80" alt="Vestuarios" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="container" style="margin-bottom:0;">
+  <nav class="breadcrumb-nav z-depth-1" style="border-radius:4px;">
+    <div class="nav-wrapper" style="padding:0 16px;">
+      <a href="#inicio"    class="breadcrumb white-text waves-effect">Inicio</a>
+      <a href="#servicios" class="breadcrumb white-text waves-effect">Instalaciones</a>
+      <a href="#contacto"  class="breadcrumb white-text waves-effect">Contacto</a>
+    </div>
+  </nav>
+</div>
+
+<!-- FORMULARIO -->
+<section id="contacto" class="section bg-dark-2">
+  <div class="container">
+    <div class="center-align" style="margin-bottom:40px;">
+      <h4 class="white-text section-title">Contáctanos</h4>
+      <div class="title-underline deep-purple lighten-1"></div>
+      <p class="grey-text text-lighten-1" style="font-size:1.05rem;">Da el primer paso — uno de nuestros asesores te contactará pronto</p>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m10 offset-m1 l8 offset-l2">
+        <div class="card z-depth-3" style="border-top:4px solid #7b1fa2;border-radius:4px;">
+          <div class="card-content" style="padding:36px 32px;">
+            <form id="form-contacto" onsubmit="enviarFormulario(event)">
+              <div class="row" style="margin-bottom:0;">
+
+                <div class="input-field col s12 m6">
+                  <i class="material-icons prefix purple-text text-lighten-2">person</i>
+                  <input id="nombre" type="text" class="validate" required minlength="3" />
+                  <label for="nombre">Nombre completo</label>
+                  <span class="helper-text" data-error="Mínimo 3 caracteres" data-success="¡Perfecto!"></span>
+                </div>
+
+                <div class="input-field col s12 m6">
+                  <i class="material-icons prefix purple-text text-lighten-2">email</i>
+                  <input id="email" type="email" class="validate" required />
+                  <label for="email">Correo electrónico</label>
+                  <span class="helper-text" data-error="Email inválido" data-success="Email válido"></span>
+                </div>
+
+                <div class="input-field col s12 m6">
+                  <i class="material-icons prefix purple-text text-lighten-2">phone</i>
+                  <input id="telefono" type="tel" />
+                  <label for="telefono">Teléfono (opcional)</label>
+                </div>
+
+                <div class="col s12 m6" style="margin-top:14px;">
+                  <p class="white-text" style="margin-bottom:6px;font-weight:500;font-size:.9rem;">
+                    <i class="material-icons tiny purple-text text-lighten-2" style="vertical-align:middle;margin-right:4px;">card_membership</i>Tipo de membresía:
+                  </p>
+                  <label style="margin-right:18px;"><input name="membresia" type="radio" value="basico" /><span>Básico</span></label>
+                  <label style="margin-right:18px;"><input name="membresia" type="radio" value="pro" /><span>Pro</span></label>
+                  <label><input name="membresia" type="radio" value="premium" /><span>Premium</span></label>
+                </div>
+
+                <div class="input-field col s12">
+                  <i class="material-icons prefix purple-text text-lighten-2">message</i>
+                  <textarea id="mensaje" class="materialize-textarea" style="min-height:100px;"></textarea>
+                  <label for="mensaje">Mensaje de consulta</label>
+                </div>
+
+                <div class="col s12" style="margin-bottom:14px;">
+                  <p class="white-text" style="margin-bottom:8px;font-weight:500;font-size:.9rem;">
+                    <i class="material-icons tiny purple-text text-lighten-2" style="vertical-align:middle;margin-right:4px;">schedule</i>Turno preferido:
+                  </p>
+                  <label style="margin-right:18px;"><input name="turno" type="radio" value="manana" /><span>Mañana</span></label>
+                  <label style="margin-right:18px;"><input name="turno" type="radio" value="tarde" /><span>Tarde</span></label>
+                  <label><input name="turno" type="radio" value="noche" /><span>Noche</span></label>
+                </div>
+
+                <div class="col s12" style="margin-bottom:24px;">
+                  <label>
+                    <input type="checkbox" required />
+                    <span>Acepto los <a href="#" class="purple-text text-lighten-2">términos y condiciones</a></span>
+                  </label>
+                </div>
+
+                <!-- Botón enviar -->
+                <div class="col s12">
+                  <button id="btn-enviar" class="btn btn-large waves-effect waves-light deep-purple" type="submit"
+                    style="width:100%;border-radius:3px;font-weight:700;letter-spacing:1px;font-size:1rem;transition:all .3s;">
+                    <i class="material-icons left">send</i>Enviar consulta
+                  </button>
+                </div>
+
+                <!-- Mensaje de éxito (oculto por defecto) -->
+                <div class="col s12" id="msg-enviado" style="margin-top:16px;">
+                  <div class="card green darken-2 z-depth-2" style="border-radius:4px;">
+                    <div class="card-content center-align" style="padding:20px;">
+                      <i class="material-icons white-text" style="font-size:3rem;display:block;">check_circle</i>
+                      <h5 class="white-text" style="margin:8px 0 4px;font-weight:700;">¡Mensaje enviado!</h5>
+                      <p class="white-text" style="margin:0;opacity:.9;">Nos comunicaremos contigo a la brevedad posible.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     FOOTER — (Parte 1) con datos ESPE Latacunga
+══════════════════════════════════════════════════════ -->
+<footer class="page-footer deep-purple darken-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Marca -->
+      <div class="col s12 m4">
+        <h5 class="white-text" style="display:flex;align-items:center;gap:8px;">
+          <i class="material-icons">fitness_center</i>PowerFit
+        </h5>
+        <p class="grey-text text-lighten-3" style="line-height:1.7;">
+          Tu aliado en el camino hacia una vida más saludable y activa. Entrena, supérate y transforma tu cuerpo y mente.
+        </p>
+        <div style="display:flex;gap:8px;margin-top:12px;">
+          <a href="#" class="btn-floating btn-small waves-effect waves-light purple lighten-2"><i class="material-icons">facebook</i></a>
+          <a href="#" class="btn-floating btn-small waves-effect waves-light purple lighten-2"><i class="material-icons">camera_alt</i></a>
+          <a href="#" class="btn-floating btn-small waves-effect waves-light purple lighten-2"><i class="material-icons">play_circle_filled</i></a>
+        </div>
+      </div>
+
+      <!-- Secciones -->
+      <div class="col s12 m4">
+        <h6 class="white-text" style="font-weight:700;letter-spacing:1px;">SECCIONES</h6>
+        <ul style="list-style:none;padding:0;">
+          <li><a href="#inicio"    class="grey-text text-lighten-3 waves-effect" style="line-height:2.2;">Inicio</a></li>
+          <li><a href="#servicios" class="grey-text text-lighten-3 waves-effect" style="line-height:2.2;">Servicios</a></li>
+          <li><a href="#equipo"    class="grey-text text-lighten-3 waves-effect" style="line-height:2.2;">Equipo</a></li>
+          <li><a href="#contacto"  class="grey-text text-lighten-3 waves-effect" style="line-height:2.2;">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto — ESPE Latacunga -->
+      <div class="col s12 m4">
+        <h6 class="white-text" style="font-weight:700;letter-spacing:1px;">CONTACTO</h6>
+        <ul style="list-style:none;padding:0;">
+
+          <!-- Dirección con link a Google Maps -->
+          <li style="line-height:2.2;">
+            <a href="https://www.google.com/maps/search/Universidad+de+las+Fuerzas+Armadas+ESPE+Latacunga"
+               target="_blank" rel="noopener"
+               class="grey-text text-lighten-3"
+               style="display:flex;align-items:flex-start;gap:6px;">
+              <i class="material-icons tiny" style="margin-top:5px;flex-shrink:0;">location_on</i>
+              <span>Av. General Maldonado s/n,<br>Latacunga, Ecuador (ESPE)</span>
+            </a>
+          </li>
+
+          <!-- Teléfono clickeable -->
+          <li style="line-height:2.2;">
+            <a href="tel:+593995396752" class="grey-text text-lighten-3" style="display:flex;align-items:center;gap:6px;">
+              <i class="material-icons tiny">phone</i>+593 99 539 6752
+            </a>
+          </li>
+
+          <!-- Email / Sitio ESPE -->
+          <li style="line-height:2.2;">
+            <a href="https://www.espe.edu.ec" target="_blank" rel="noopener"
+               class="grey-text text-lighten-3" style="display:flex;align-items:center;gap:6px;">
+              <i class="material-icons tiny">language</i>www.espe.edu.ec
+            </a>
+          </li>
+
+          <!-- Horarios -->
+          <li class="grey-text text-lighten-3" style="display:flex;align-items:flex-start;gap:6px;line-height:1.8;margin-top:4px;">
+            <i class="material-icons tiny" style="margin-top:3px;flex-shrink:0;">schedule</i>
+            <span>Lun–Vie: 5:00–23:00<br>Sáb–Dom: 6:00–22:00</span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+      <span>© 2025 PowerFit Gym — Todos los derechos reservados</span>
+      <span class="grey-text text-lighten-2" style="font-size:.82rem;">ESPE Latacunga | Proyecto Materialize CSS</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Materialize JS — solo para Toast y Waves effect -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  function enviarFormulario(e) {
+    e.preventDefault();
+
+    var btn = document.getElementById('btn-enviar');
+    var msg = document.getElementById('msg-enviado');
+
+    // Cambiar estado del botón
+    btn.innerHTML = '<i class="material-icons left">hourglass_empty</i>Enviando...';
+    btn.disabled = true;
+
+    // Simular envío
+    setTimeout(function() {
+      // Toast de Materialize
+      M.toast({
+        html: '<i class="material-icons left" style="margin-right:8px;">check_circle</i> ¡Mensaje enviado correctamente!',
+        classes: 'green darken-2 rounded z-depth-4',
+        displayLength: 5000
+      });
+
+      // Mostrar card de éxito
+      msg.classList.add('visible');
+
+      // Cambiar botón a "enviado"
+      btn.innerHTML = '<i class="material-icons left">check</i>¡Enviado!';
+      btn.classList.remove('deep-purple');
+      btn.classList.add('green', 'darken-2');
+    }, 1200);
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!-- =====================================================
+   PARTE 2 — sections/servicios.html
+   Responsable: Parte 2
+   Contenido: Cards de Servicios + Tabla de Planes
+   Componentes Materialize: .card, .card-image,
+   .card-content, .card-action, .chip,
+   .col .s12 .m6 .l3, .responsive-table,
+   .striped, .highlight
+   ===================================================== -->
+
+<!-- ═══════════════════════════════════════
+     SECCIÓN SERVICIOS
+═══════════════════════════════════════ -->
+<section id="servicios" class="container section">
+
+  <div class="center-align">
+    <h4 class="white-text section-title">Nuestros Servicios</h4>
+    <div class="title-underline deep-purple lighten-1"></div>
+    <p class="grey-text text-lighten-1" style="max-width:560px;margin:0 auto 40px;font-size:1.05rem;">
+      Todo lo que necesitas para alcanzar tus metas en un solo lugar
+    </p>
+  </div>
+
+  <div class="row">
+
+    <!-- Card 1: Cardio -->
+    <div class="col s12 m6 l3">
+      <div class="card hoverable z-depth-2">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=600&q=80" class="srv-img" alt="Cardio" />
+          <span class="card-title">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">directions_run</i>Cardio
+          </span>
+        </div>
+        <div class="card-content">
+          <p>Mejora tu resistencia cardiovascular con equipos de última generación y rutinas progresivas.</p>
+          <span class="chip purple lighten-2 white-text" style="font-size:.75rem;">Principiante</span>
+          <span class="chip grey darken-3 white-text" style="font-size:.75rem;">Grupal</span>
+        </div>
+        <div class="card-action">
+          <a href="#contacto" class="waves-effect waves-light">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Pesas -->
+    <div class="col s12 m6 l3">
+      <div class="card hoverable z-depth-2">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?w=600&q=80" class="srv-img" alt="Pesas" />
+          <span class="card-title">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">fitness_center</i>Pesas
+          </span>
+        </div>
+        <div class="card-content">
+          <p>Sala de pesas libre con más de 300 equipos. Aumenta tu fuerza y define tu musculatura.</p>
+          <span class="chip purple darken-2 white-text" style="font-size:.75rem;">Avanzado</span>
+          <span class="chip grey darken-3 white-text" style="font-size:.75rem;">Individual</span>
+        </div>
+        <div class="card-action">
+          <a href="#contacto" class="waves-effect waves-light">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Yoga -->
+    <div class="col s12 m6 l3">
+      <div class="card hoverable z-depth-2">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80" class="srv-img" alt="Yoga" />
+          <span class="card-title">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">self_improvement</i>Yoga
+          </span>
+        </div>
+        <div class="card-content">
+          <p>Mejora tu flexibilidad, equilibrio mental y bienestar. Clases para todos los niveles.</p>
+          <span class="chip teal lighten-1 white-text" style="font-size:.75rem;">Principiante</span>
+          <span class="chip grey darken-3 white-text" style="font-size:.75rem;">Grupal</span>
+        </div>
+        <div class="card-action">
+          <a href="#contacto" class="waves-effect waves-light">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Funcional -->
+    <div class="col s12 m6 l3">
+      <div class="card hoverable z-depth-2">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=600&q=80" class="srv-img" alt="Funcional" />
+          <span class="card-title">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">sports_mma</i>Funcional
+          </span>
+        </div>
+        <div class="card-content">
+          <p>CrossFit y entrenamiento funcional de alta intensidad. Quema calorías y gana fuerza.</p>
+          <span class="chip orange darken-2 white-text" style="font-size:.75rem;">Avanzado</span>
+          <span class="chip grey darken-3 white-text" style="font-size:.75rem;">Grupal</span>
+        </div>
+        <div class="card-action">
+          <a href="#contacto" class="waves-effect waves-light">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     TABLA DE PLANES
+═══════════════════════════════════════ -->
+<div class="bg-dark-2" style="padding:60px 0;">
+  <div class="container">
+
+    <div class="center-align" style="margin-bottom:40px;">
+      <h4 class="white-text section-title">Planes y Precios</h4>
+      <div class="title-underline deep-purple lighten-1"></div>
+      <p class="grey-text text-lighten-1" style="font-size:1.05rem;">Elige el plan que mejor se adapte a tus metas</p>
+    </div>
+
+    <table class="striped highlight responsive-table z-depth-2" style="border-radius:4px;overflow:hidden;">
+      <thead>
+        <tr>
+          <th>Característica</th>
+          <th>
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">star_border</i>Básico
+          </th>
+          <th>
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">star_half</i>Pro
+          </th>
+          <th>
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">star</i>Premium
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong class="white-text">Precio / mes</strong></td>
+          <td>$20</td>
+          <td>$35</td>
+          <td>$55</td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Acceso sala</strong></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Clases grupales</strong></td>
+          <td>2 / semana</td>
+          <td>5 / semana</td>
+          <td>Ilimitado</td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Entrenador personal</strong></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td>1 / mes</td>
+          <td>4 / mes</td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Piscina &amp; Spa</strong></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Plan nutricional</strong></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+        </tr>
+        <tr>
+          <td><strong class="white-text">Acceso 24/7</strong></td>
+          <td><i class="material-icons red-text text-lighten-1">cancel</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+          <td><i class="material-icons green-text">check_circle</i></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="center-align" style="margin-top:32px;">
+      <a href="#contacto" class="btn btn-large waves-effect waves-light deep-purple" style="border-radius:3px;font-weight:700;letter-spacing:1px;">
+        <i class="material-icons left">card_membership</i>Consultar membresía
+      </a>
+    </div>
+
+  </div>
+</div>

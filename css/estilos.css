@@ -1,0 +1,172 @@
+/* =====================================================
+   estilos.css — CSS propio ENCIMA de Materialize
+   Proyecto Gym | ESPE Latacunga
+   Regla: solo lo que Materialize no puede hacer solo
+   ===================================================== */
+
+/* ── Cuerpo ── */
+body {
+  background-color: #0f0f0f;
+  padding-top: 64px;
+}
+
+/* ── Secciones ── */
+.section { padding: 70px 0; }
+.bg-dark-1 { background-color: #111; }
+.bg-dark-2 { background-color: #181818; }
+
+/* ── Títulos ── */
+.section-title { font-size: 2rem; font-weight: 700; letter-spacing: 1px; }
+.title-underline { width: 52px; height: 4px; border-radius: 2px; margin: 8px auto 32px; }
+
+/* ── Hero ── */
+.hero-section {
+  min-height: 90vh;
+  background:
+    linear-gradient(135deg, rgba(49,27,146,.80) 0%, rgba(0,0,0,.75) 100%),
+    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80')
+    center / cover fixed;
+}
+.hero-title {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 24px rgba(0,0,0,.6);
+  line-height: 1.1;
+}
+.hero-sub { font-size: clamp(1rem, 2.5vw, 1.3rem); opacity: .88; letter-spacing: 1px; }
+
+/* ── Cards (dark theme override) ── */
+.card { background-color: #1c1c1c !important; }
+.card .card-title { color: #fff !important; font-weight: 700; }
+.card p { color: #bbb; }
+.card .card-action { border-top: 1px solid #2a2a2a !important; }
+.card .card-action a { color: #ce93d8 !important; font-weight: 600; }
+
+/* ── Servicio card image ── */
+.srv-img { height: 180px; width: 100%; object-fit: cover; display: block; }
+
+/* ── Perfiles de entrenadores ── */
+.trainer-img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+.trainer-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(30,0,60,.92));
+  padding: 24px 16px 12px;
+}
+.skill-lbl { display: flex; justify-content: space-between; margin-bottom: 4px; font-size: .82rem; }
+.info-stat { text-align: center; padding: 10px 6px; }
+.info-stat i  { font-size: 1.3rem; }
+.info-stat .val { font-weight: 700; font-size: .95rem; margin: 3px 0 0; color: #fff; }
+.info-stat .lbl { font-size: .7rem; color: #999; margin: 0; }
+
+/* ── Horario flip cards ── */
+.day-card {
+  perspective: 900px;
+  height: 190px;
+  cursor: pointer;
+}
+.day-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform .65s cubic-bezier(.4,0,.2,1);
+  transform-style: preserve-3d;
+}
+.day-card:hover .day-card-inner {
+  transform: rotateY(180deg);
+}
+.day-front, .day-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 6px;
+}
+.day-back  { transform: rotateY(180deg); }
+.day-abbr  { font-size: 1.4rem; font-weight: 900; letter-spacing: 2px; margin: 0; }
+.day-emoji { font-size: 2rem; margin: 6px 0; line-height: 1; }
+.day-name  { font-size: .72rem; opacity: .85; margin: 0; letter-spacing: 1px; }
+.day-back-title { font-weight: 700; font-size: .9rem; margin: 0 0 4px; color: #fff; }
+.day-back-time  { font-size: .78rem; opacity: .88; margin: 0; color: #ce93d8; }
+.day-back-inst  { font-size: .72rem; opacity: .75; margin: 2px 0 0; color: #ccc; }
+.day-back-level { font-size: .68rem; margin: 6px 0 0; }
+
+/* ── Galería ── */
+.gallery-img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+  transition: transform .3s ease;
+}
+.gallery-img:hover { transform: scale(1.04); }
+
+/* ── Tabla de planes ── */
+table.striped > tbody > tr:nth-child(odd) { background: rgba(103,58,183,.10); }
+table.highlight > tbody > tr:hover         { background: rgba(103,58,183,.22) !important; }
+table thead { background: #4a148c; }
+table thead th { color: #fff !important; font-weight: 700; }
+table tbody td { color: #ccc; }
+table { border-radius: 4px; overflow: hidden; }
+
+/* ── Collection horario ── */
+.collection { background: #1c1c1c !important; border-color: #2a2a2a !important; border-radius: 4px; }
+.collection .collection-item {
+  background: #1c1c1c !important;
+  border-bottom-color: #2a2a2a !important;
+  color: #ccc;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.collection .collection-item strong { color: #e0e0e0; }
+.collection .divider { background: #2e2e2e; }
+
+/* ── Breadcrumb ── */
+nav.breadcrumb-nav { background: #4a148c; border-radius: 4px; }
+
+/* ── Formulario dark ── */
+.input-field input, .input-field textarea { color: #fff !important; border-bottom-color: #555 !important; }
+.input-field label { color: #aaa !important; }
+.input-field input:focus, .input-field textarea:focus {
+  border-bottom-color: #ce93d8 !important;
+  box-shadow: 0 1px 0 0 #ce93d8 !important;
+}
+.input-field input:focus + label, .input-field textarea:focus + label { color: #ce93d8 !important; }
+.input-field input.valid { border-bottom-color: #66bb6a !important; box-shadow: 0 1px 0 0 #66bb6a !important; }
+.input-field input.invalid { border-bottom-color: #ef5350 !important; box-shadow: 0 1px 0 0 #ef5350 !important; }
+
+/* Radio y checkbox */
+[type="radio"]:checked + span::after { background-color: #7b1fa2 !important; border-color: #7b1fa2 !important; }
+[type="radio"]:not(:checked) + span::before,
+[type="radio"]:not(:checked) + span::after { border-color: #777 !important; }
+[type="checkbox"]:checked + span::before { border-right-color: #7b1fa2 !important; border-bottom-color: #7b1fa2 !important; }
+[type="radio"] + span, [type="checkbox"] + span { color: #ccc !important; }
+
+/* ── Footer links ── */
+footer a { transition: color .2s; }
+footer a:hover { color: #ce93d8 !important; }
+
+/* ── Mensaje enviado (show/hide con CSS) ── */
+#msg-enviado {
+  display: none;
+  animation: fadeInUp .4s ease;
+}
+#msg-enviado.visible { display: block; }
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

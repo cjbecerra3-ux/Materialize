@@ -1,0 +1,133 @@
+<!-- =====================================================
+   PARTE 1 — sections/navbar.html
+   Responsable: Parte 1
+   Contenido: Navbar + Hero + Footer
+   Componentes Materialize: .navbar, .brand-logo,
+   .nav-wrapper, Material Icons, .valign-wrapper,
+   .btn .waves-effect, .page-footer, .col .s12 .m4
+   ===================================================== -->
+
+<!-- ═══════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════ -->
+<nav class="deep-purple darken-2 z-depth-3" style="position:fixed;top:0;width:100%;z-index:1000;">
+  <div class="nav-wrapper container">
+
+    <a href="#inicio" class="brand-logo white-text" style="font-size:1.5rem;font-weight:700;display:flex;align-items:center;gap:6px;">
+      <i class="material-icons">fitness_center</i>
+      PowerFit
+    </a>
+
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#inicio"    class="white-text" style="font-weight:500;letter-spacing:.5px;">Inicio</a></li>
+      <li><a href="#servicios" class="white-text" style="font-weight:500;letter-spacing:.5px;">Servicios</a></li>
+      <li><a href="#equipo"    class="white-text" style="font-weight:500;letter-spacing:.5px;">Equipo</a></li>
+      <li><a href="#contacto"  class="white-text" style="font-weight:500;letter-spacing:.5px;">Contacto</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<div id="inicio" class="hero-section valign-wrapper" style="min-height:90vh;">
+  <div class="container center-align">
+
+    <h1 class="white-text hero-title">
+      Tu mejor versión<br>empieza aquí
+    </h1>
+
+    <p class="white-text hero-sub" style="max-width:520px;margin:16px auto 40px;">
+      Más de 10 años transformando vidas. Equipo de élite, instalaciones de primer nivel y la comunidad más motivada de la ciudad.
+    </p>
+
+    <a href="#servicios" class="btn btn-large waves-effect waves-light purple lighten-1" style="margin-right:12px;border-radius:3px;font-weight:700;letter-spacing:1px;">
+      <i class="material-icons left">arrow_forward</i>Únete ahora
+    </a>
+
+    <a href="#equipo" class="btn btn-large waves-effect white deep-purple-text" style="border-radius:3px;font-weight:700;letter-spacing:1px;">
+      Nuestro equipo
+    </a>
+
+    <!-- Stats chips -->
+    <div style="margin-top:50px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <div class="chip white deep-purple-text" style="font-weight:700;font-size:.95rem;height:36px;line-height:36px;padding:0 16px;">
+        <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">people</i>2 500+ Miembros
+      </div>
+      <div class="chip white deep-purple-text" style="font-weight:700;font-size:.95rem;height:36px;line-height:36px;padding:0 16px;">
+        <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">fitness_center</i>45+ Clases
+      </div>
+      <div class="chip white deep-purple-text" style="font-weight:700;font-size:.95rem;height:36px;line-height:36px;padding:0 16px;">
+        <i class="material-icons tiny" style="vertical-align:middle;margin-right:4px;">star</i>10 Años
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     (incluido aquí por ser Parte 1)
+═══════════════════════════════════════ -->
+<footer class="page-footer deep-purple darken-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Columna 1: Marca + descripción -->
+      <div class="col s12 m4">
+        <h5 class="white-text" style="display:flex;align-items:center;gap:8px;">
+          <i class="material-icons">fitness_center</i> PowerFit
+        </h5>
+        <p class="grey-text text-lighten-3" style="line-height:1.7;">
+          Tu aliado en el camino hacia una vida más saludable y activa. Entrena, supérate y transforma tu cuerpo y mente.
+        </p>
+        <div style="display:flex;gap:8px;margin-top:12px;">
+          <a href="#" class="btn-floating btn-small waves-effect purple lighten-2"><i class="material-icons">facebook</i></a>
+          <a href="#" class="btn-floating btn-small waves-effect purple lighten-2"><i class="material-icons">camera_alt</i></a>
+          <a href="#" class="btn-floating btn-small waves-effect purple lighten-2"><i class="material-icons">play_circle_filled</i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Links -->
+      <div class="col s12 m4">
+        <h6 class="white-text" style="font-weight:700;letter-spacing:1px;">SECCIONES</h6>
+        <ul style="list-style:none;padding:0;">
+          <li><a href="#inicio"    class="grey-text text-lighten-3" style="line-height:2.2;">Inicio</a></li>
+          <li><a href="#servicios" class="grey-text text-lighten-3" style="line-height:2.2;">Servicios</a></li>
+          <li><a href="#equipo"    class="grey-text text-lighten-3" style="line-height:2.2;">Equipo</a></li>
+          <li><a href="#contacto"  class="grey-text text-lighten-3" style="line-height:2.2;">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Contacto -->
+      <div class="col s12 m4">
+        <h6 class="white-text" style="font-weight:700;letter-spacing:1px;">CONTACTO</h6>
+        <ul style="list-style:none;padding:0;">
+          <li class="grey-text text-lighten-3" style="line-height:2.2;">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:6px;">location_on</i>Av. Principal #123
+          </li>
+          <li class="grey-text text-lighten-3" style="line-height:2.2;">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:6px;">phone</i>+593 99 123 4567
+          </li>
+          <li class="grey-text text-lighten-3" style="line-height:2.2;">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:6px;">email</i>info@powerfit.com
+          </li>
+          <li class="grey-text text-lighten-3" style="line-height:2.2;">
+            <i class="material-icons tiny" style="vertical-align:middle;margin-right:6px;">schedule</i>Lun–Vie: 5:00–23:00
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+      <span>© 2025 PowerFit Gym — Todos los derechos reservados</span>
+      <span class="grey-text text-lighten-2" style="font-size:.82rem;">ESPE Latacunga | Proyecto Materialize CSS</span>
+    </div>
+  </div>
+</footer>

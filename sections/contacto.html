@@ -1,0 +1,220 @@
+<!-- =====================================================
+   PARTE 4 — sections/contacto.html
+   Responsable: Parte 4
+   Contenido: Galería de Imágenes + Formulario
+   Componentes Materialize: .col .s12 .m6 .l4,
+   .responsive-img, .breadcrumb,
+   input[type=text].validate,
+   input[type=email].validate,
+   .materialize-textarea, input[type=radio],
+   input[type=checkbox], .btn .waves-effect,
+   M.toast (Materialize JS — formulario)
+   Nota: select reemplazado con radio buttons (sin JS adicional)
+   ===================================================== -->
+
+<!-- ═══════════════════════════════════════
+     GALERÍA
+═══════════════════════════════════════ -->
+<section class="section bg-dark-1">
+  <div class="container">
+
+    <div class="center-align">
+      <h4 class="white-text section-title">Nuestras Instalaciones</h4>
+      <div class="title-underline deep-purple lighten-1"></div>
+      <p class="grey-text text-lighten-1" style="font-size:1.05rem;margin-bottom:40px;">
+        Instalaciones de primera clase diseñadas para tu éxito
+      </p>
+    </div>
+
+    <div class="row">
+
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2"
+             src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80"
+             alt="Sala principal" />
+      </div>
+
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2"
+             src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80"
+             alt="Área cardio" />
+      </div>
+
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2"
+             src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80"
+             alt="Pesas libres" />
+      </div>
+
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2"
+             src="https://images.unsplash.com/photo-1549476464-37392f717541?w=600&q=80"
+             alt="Sala yoga" />
+      </div>
+
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2"
+             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+             alt="Zona funcional" />
+      </div>
+
+      <div class="col s12 m6 l4" style="padding:6px;">
+        <img class="responsive-img gallery-img z-depth-2"
+             src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=600&q=80"
+             alt="Vestuarios" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     BREADCRUMB
+═══════════════════════════════════════ -->
+<div class="container" style="margin-bottom:0;">
+  <nav class="breadcrumb-nav z-depth-1" style="border-radius:4px;">
+    <div class="nav-wrapper" style="padding:0 16px;">
+      <a href="#inicio"    class="breadcrumb white-text waves-effect">Inicio</a>
+      <a href="#servicios" class="breadcrumb white-text waves-effect">Instalaciones</a>
+      <a href="#contacto"  class="breadcrumb white-text waves-effect">Contacto</a>
+    </div>
+  </nav>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     FORMULARIO DE CONTACTO
+═══════════════════════════════════════ -->
+<section id="contacto" class="section bg-dark-2">
+  <div class="container">
+
+    <div class="center-align" style="margin-bottom:40px;">
+      <h4 class="white-text section-title">Contáctanos</h4>
+      <div class="title-underline deep-purple lighten-1"></div>
+      <p class="grey-text text-lighten-1" style="font-size:1.05rem;">
+        Da el primer paso — uno de nuestros asesores te contactará pronto
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m10 offset-m1 l8 offset-l2">
+
+        <div class="card z-depth-3" style="border-top:4px solid #7b1fa2;border-radius:4px;">
+          <div class="card-content" style="padding:36px 32px;">
+
+            <form id="form-contacto" onsubmit="enviarFormulario(event)">
+              <div class="row" style="margin-bottom:0;">
+
+                <!-- Nombre -->
+                <div class="input-field col s12 m6">
+                  <i class="material-icons prefix purple-text text-lighten-2">person</i>
+                  <input id="nombre" type="text" class="validate" required minlength="3" />
+                  <label for="nombre">Nombre completo</label>
+                  <span class="helper-text" data-error="Mínimo 3 caracteres" data-success="¡Perfecto!"></span>
+                </div>
+
+                <!-- Email -->
+                <div class="input-field col s12 m6">
+                  <i class="material-icons prefix purple-text text-lighten-2">email</i>
+                  <input id="email" type="email" class="validate" required />
+                  <label for="email">Correo electrónico</label>
+                  <span class="helper-text" data-error="Email inválido" data-success="Email válido"></span>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="input-field col s12 m6">
+                  <i class="material-icons prefix purple-text text-lighten-2">phone</i>
+                  <input id="telefono" type="tel" />
+                  <label for="telefono">Teléfono (opcional)</label>
+                </div>
+
+                <!-- Membresía — radio buttons -->
+                <div class="col s12 m6" style="margin-top:14px;">
+                  <p class="white-text" style="margin-bottom:6px;font-weight:500;font-size:.9rem;">
+                    <i class="material-icons tiny purple-text text-lighten-2" style="vertical-align:middle;margin-right:4px;">card_membership</i>Tipo de membresía:
+                  </p>
+                  <label style="margin-right:18px;"><input name="membresia" type="radio" value="basico" /><span>Básico</span></label>
+                  <label style="margin-right:18px;"><input name="membresia" type="radio" value="pro" /><span>Pro</span></label>
+                  <label><input name="membresia" type="radio" value="premium" /><span>Premium</span></label>
+                </div>
+
+                <!-- Mensaje -->
+                <div class="input-field col s12">
+                  <i class="material-icons prefix purple-text text-lighten-2">message</i>
+                  <textarea id="mensaje" class="materialize-textarea" style="min-height:100px;"></textarea>
+                  <label for="mensaje">Mensaje de consulta</label>
+                </div>
+
+                <!-- Turno preferido -->
+                <div class="col s12" style="margin-bottom:14px;">
+                  <p class="white-text" style="margin-bottom:8px;font-weight:500;font-size:.9rem;">
+                    <i class="material-icons tiny purple-text text-lighten-2" style="vertical-align:middle;margin-right:4px;">schedule</i>Turno preferido:
+                  </p>
+                  <label style="margin-right:18px;"><input name="turno" type="radio" value="manana" /><span>Mañana</span></label>
+                  <label style="margin-right:18px;"><input name="turno" type="radio" value="tarde" /><span>Tarde</span></label>
+                  <label><input name="turno" type="radio" value="noche" /><span>Noche</span></label>
+                </div>
+
+                <!-- Checkbox términos -->
+                <div class="col s12" style="margin-bottom:24px;">
+                  <label>
+                    <input type="checkbox" required />
+                    <span>Acepto los <a href="#" class="purple-text text-lighten-2">términos y condiciones</a></span>
+                  </label>
+                </div>
+
+                <!-- Botón enviar -->
+                <div class="col s12">
+                  <button id="btn-enviar" class="btn btn-large waves-effect waves-light deep-purple" type="submit"
+                    style="width:100%;border-radius:3px;font-weight:700;letter-spacing:1px;font-size:1rem;transition:all .3s;">
+                    <i class="material-icons left">send</i>Enviar consulta
+                  </button>
+                </div>
+
+                <!-- Card de éxito (oculta por defecto) -->
+                <div class="col s12" id="msg-enviado" style="margin-top:16px;">
+                  <div class="card green darken-2 z-depth-2" style="border-radius:4px;">
+                    <div class="card-content center-align" style="padding:20px;">
+                      <i class="material-icons white-text" style="font-size:3rem;display:block;">check_circle</i>
+                      <h5 class="white-text" style="margin:8px 0 4px;font-weight:700;">¡Mensaje enviado!</h5>
+                      <p class="white-text" style="margin:0;opacity:.9;">Nos comunicaremos contigo a la brevedad posible.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Script del formulario — usa M.toast de Materialize JS -->
+<script>
+  function enviarFormulario(e) {
+    e.preventDefault();
+    var btn = document.getElementById('btn-enviar');
+    var msg = document.getElementById('msg-enviado');
+
+    btn.innerHTML = '<i class="material-icons left">hourglass_empty</i>Enviando...';
+    btn.disabled = true;
+
+    setTimeout(function() {
+      M.toast({
+        html: '<i class="material-icons left" style="margin-right:8px;">check_circle</i> ¡Mensaje enviado correctamente!',
+        classes: 'green darken-2 rounded z-depth-4',
+        displayLength: 5000
+      });
+      msg.classList.add('visible');
+      btn.innerHTML = '<i class="material-icons left">check</i>¡Enviado!';
+      btn.classList.remove('deep-purple');
+      btn.classList.add('green', 'darken-2');
+    }, 1200);
+  }
+</script>
